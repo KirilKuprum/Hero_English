@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>English School Landing</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- HERO -->
+    <section class="hero">
+        <div class="hero-left">
+            <h1>Speak English Confidently in 90 Days</h1>
+            <p>Personalized online lessons with certified tutors.</p>
+
+            <!-- ДОДАЛИ onclick -->
+            <button onclick="scrollToForm()">Get Free Trial Lesson</button>
+
+            <ul class="hero-list">
+                <li>Free trial lesson</li>
+                <li>Level assessment</li>
+                <li>No credit card required</li>
+            </ul>
+        </div>
+
+        <div class="hero-right">
+            <img src="img/student.jpg">
+        </div>
+    </section>
+
+    <!-- HOW IT WORKS -->
+    <section>
+        <h2>How It Works</h2>
+        <div class="card-container">
+            <div class="card">
+                <h3>1. Book Trial</h3>
+                <p>Schedule your first lesson</p>
+                <button onclick="scrollToForm()">Get Started</button>
+            </div>
+
+            <div class="card">
+                <h3>2. Get Your Level</h3>
+                <p>We analyze your English level</p>
+                <button onclick="scrollToForm()">Get Started</button>
+            </div>
+
+            <div class="card">
+                <h3>3. Personal Program</h3>
+                <p>Receive a customized plan</p>
+                <button onclick="scrollToForm()">Get Started</button>
+            </div>
+
+            <div class="card">
+                <h3>4. Start Speaking</h3>
+                <p>Practice with native tutors</p>
+                <button onclick="scrollToForm()">Get Started</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- FORM -->
+    <section class="form-section" id="form-section">
+        <h2>Book Your Free Trial Lesson</h2>
+
+        <div class="form-card">
+            <!-- ДОДАЛИ id -->
+            <form id="application-form">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="tel" name="phone" placeholder="Phone Number" required>
+                <input type="email" name="email" placeholder="Email Address" required>
+
+                <select name="level" required>
+                    <option value="">Select Your Level</option>
+                    <option>Beginner</option>
+                    <option>Intermediate</option>
+                    <option>Advanced</option>
+                </select>
+
+                <button type="submit">Book Free Lesson</button>
+            </form>
+
+            <!-- ДОДАЛИ message -->
+            <p id="response-message"></p>
+        </div>
+    </section>
+
+    <section class="contacts">
+        <h2>Contact Us</h2>
+
+        <div class="contact-container">
+            <div class="contact-card">
+                <h3>📞 Phone</h3>
+                <p>+380 00 000 0000</p>
+            </div>
+
+            <div class="contact-card">
+                <h3>📧 Email</h3>
+                <p>school@example.com</p>
+            </div>
+
+            <div class="contact-card">
+                <h3>📍 Address</h3>
+                <p>New-York, USA</p>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,151 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f4f7fb;
+}
+
+/* ALL SECTIONS */
+section {
+    padding: 60px 20px;
+    text-align: center;
+    border: 2px solid #d0d8e6;
+    border-radius: 12px;
+    margin: 30px auto;
+    max-width: 1200px;
+    background: white;
+}
+
+/* HERO */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: left;
+}
+
+.hero-left {
+    flex: 1;
+    padding: 20px;
+    border: 2px solid #d0d8e6;
+    border-radius: 10px;
+}
+
+.hero-right {
+    flex: 1;
+    text-align: center;
+    border: 2px solid #d0d8e6;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.hero img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.hero h1 {
+    font-size: 36px;
+}
+
+.hero-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+.hero-list li {
+    margin: 8px 0;
+}
+
+/* CARDS */
+.card-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.card {
+    border: 2px solid #d0d8e6;
+    border-radius: 10px;
+    padding: 20px;
+    width: 250px;
+    background: #f9fbff;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+/* BUTTONS */
+button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    border: 2px solid #2b7cff;
+    border-radius: 8px;
+    background: white;
+    color: #2b7cff;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    background: #2b7cff;
+    color: white;
+}
+
+/* FORM */
+.form-section {
+    background: #f0f5ff;
+}
+
+.form-card {
+    max-width: 500px;
+    margin: 30px auto 0;
+    padding: 30px;
+    border: 2px solid #d0d8e6;
+    border-radius: 12px;
+    background: white;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form input,
+form select {
+    margin-bottom: 15px;
+    padding: 12px;
+    border: 2px solid #d0d8e6;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+form input:focus,
+form select:focus {
+    border-color: #2b7cff;
+    outline: none;
+}
+
+form button {
+    padding: 12px;
+    font-size: 16px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-left,
+    .hero-right {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}

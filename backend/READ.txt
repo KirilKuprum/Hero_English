@@ -1,0 +1,1 @@
+щоб запустити бота треба в папці backend - uvicorn main:app --reload
