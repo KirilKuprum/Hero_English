@@ -12,7 +12,7 @@ document.getElementById("application-form")
     const data = Object.fromEntries(formData.entries());
 
     try {
-        const response = await fetch("http://localhost:8000/apply", {
+        const response = await fetch("https://hero-english.onrender.com/apply", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify(data)
