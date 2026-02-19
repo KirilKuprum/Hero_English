@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>EngliPro — Speak English Confidently</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="logo">Engli<span>Pro</span></div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-left">
+            <span class="badge">Personalized education</span>
+            <h1>Speak English Confidently in 90 Days</h1>
+            <p>Personalized online lessons with certified tutors. Real speaking practice. Real results.</p>
+            <button onclick="scrollToForm()">Get Free Trial Lesson</button>
+            <ul class="hero-list">
+                <li>✓ Free trial lesson</li>
+                <li>✓ Level assessment</li>
+                <li>✓ No credit card required</li>
+            </ul>
+        </div>
+        <div class="hero-right">
+            <img src="img/student.jpg">
+        </div>
+    </section>
+
+    <section>
+        <h2>How It Works</h2>
+        <div class="card-container">
+            <div class="card">
+                <div class="step-num">1</div>
+                <h3>Book Trial</h3>
+                <p>Schedule your first lesson for free with native tutors.</p>
+                <button onclick="scrollToForm()">Get Started</button>
+            </div>
+            <div class="card">
+                <div class="step-num">2</div>
+                <h3>Get Your Level</h3>
+                <p>We analyze your current English level and goals.</p>
+                <button onclick="scrollToForm()">Get Started</button>
+            </div>
+            <div class="card">
+                <div class="step-num">3</div>
+                <h3>Personal Program</h3>
+                <p>Receive a customized learning plan tailored for you.</p>
+                <button onclick="scrollToForm()">Get Started</button>
+            </div>
+            <div class="card">
+                <div class="step-num">4</div>
+                <h3>Start Speaking</h3>
+                <p>Practice with our native English tutors every day.</p>
+                <button onclick="scrollToForm()">Get Started</button>
+            </div>
+        </div>
+    </section>
+    <section class="tutors-section">
+        <h2>Meet Our Expert Tutors</h2>
+        <div class="tutors-container">
+            <div class="tutor-card">
+                <div class="tutor-img">
+                    <img src="img/tutor1.jpg">
+                </div>
+                <h3>Sarah Johnson</h3>
+                <span class="tutor-origin">🇺🇸 USA</span>
+                <p>Specializes in Business English and IELTS preparation with 8 years of experience.</p>
+            </div>
+            <div class="tutor-card">
+                <div class="tutor-img">
+                    <img src="img/tutor2.jpg">
+                </div>
+                <h3>James Wilson</h3>
+                <span class="tutor-origin">🇬🇧 UK</span>
+                <p>Expert in conversational English and British pronunciation. Loves helping beginners.</p>
+            </div>
+            <div class="tutor-card">
+                <div class="tutor-img">
+                    <img src="img/tutor3.jpg">
+                </div>
+                <h3>Emma Davis</h3>
+                <span class="tutor-origin">🇨🇦 Canada</span>
+                <p>Focuses on vocabulary building and American culture. CELTA certified teacher.</p>
+            </div>
+        </div>
+    </section>
+    <section class="pricing">
+        <h2>Choose Your Plan</h2>
+        <div class="card-container">
+            <div class="price-card">
+                <h3>Starter</h3>
+                <div class="price">$79<span>/mo</span></div>
+                <ul>
+                    <li>8 lessons per month</li>
+                    <li>Basic materials</li>
+                    <li>Group chat access</li>
+                </ul>
+                <button onclick="scrollToForm()">Choose Starter</button>
+            </div>
+            <div class="price-card popular">
+                <div class="popular-label">Most Popular</div>
+                <h3>Pro</h3>
+                <div class="price">$129<span>/mo</span></div>
+                <ul>
+                    <li>12 lessons per month</li>
+                    <li>Personalized plan</li>
+                    <li>Progress tracking</li>
+                    <li>Speaking club access</li>
+                </ul>
+                <button onclick="scrollToForm()">Choose Pro</button>
+            </div>
+            <div class="price-card">
+                <h3>Premium</h3>
+                <div class="price">$199<span>/mo</span></div>
+                <ul>
+                    <li>Unlimited lessons</li>
+                    <li>Personal tutor 24/7</li>
+                    <li>Exam preparation</li>
+                    <li>Job interview prep</li>
+                </ul>
+                <button onclick="scrollToForm()">Choose Premium</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="form-section" id="form-section">
+        <h2>Book Your Free Trial Lesson Now</h2>
+        <div class="form-card">
+            <form id="application-form">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="tel" name="phone" placeholder="Phone Number" required>
+                <input type="email" name="email" placeholder="Email Address" required>
+                <select name="level" required>
+                    <option value="">Select Your Level</option>
+                    <option>Beginner</option>
+                    <option>Intermediate</option>
+                    <option>Advanced</option>
+                </select>
+                <button type="submit">Book Free Lesson</button>
+            </form>
+            <p id="response-message"></p>
+        </div>
+    </section>
+
+    <section class="contacts">
+    <h2>Contact Us</h2>
+    <div class="contact-container">
+        <div class="contact-item">
+            <span class="contact-icon">📞</span>
+            <div>
+                <h4>Phone</h4>
+                <p>+380 00 000 0000</p>
+            </div>
+        </div>
+        <div class="contact-item">
+            <span class="contact-icon">📧</span>
+            <div>
+                <h4>Email</h4>
+                <p>hello@englipro.com</p>
+            </div>
+        </div>
+        <div class="contact-item">
+            <span class="contact-icon">📍</span>
+            <div>
+                <h4>Address</h4>
+                <p>Kyiv, Ukraine</p>
+            </div>
+        </div>
+    </div>
+</section>
+    <script src="script.js"></script>
+</body>
+</html>
